@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border box;
+    vertical-align: baseline;
+}
+
+:root {
+    --text: 1.5rem;
+    --head: calc(1rem + 5vw);
+    --bg-color: #b71540;
+}
+
+body {
+    font-family: 'FS Kim', Georgia, serif;
+}
+
+.hero-section {
+    min-height: 100vh;
+    background-image: url(https://ftr.imgix.net/FQBOc9Uh5e22pHikmfCJR/3ce3022343c7ad918545a6a2e01f36b5/homepage-pingzhu-hero-bg-opt-v2.jpg?auto=format%2Ccompress&cs=srgb&fit=max&q=60&w=1920&s=ae7331908c13b70917d2f5b72adea99b);
+    background-repeat: no repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 2;
+    animation: slide 1s ease-in-out;
+}
+
+section>img {
+    vertical-align: bottom;
+    max-width: 100%;
+    z-index: 4;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0rem 1.5rem;
+    color: black;
+    transform: translateY(-100%);
+    animation: movedown 850ms ease-in 1s forwards;
+}
+
+@keyframes movedown {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-left: 3rem;
+    font-size: var(--text);
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    /* border: 2px solid transparent; */
+
+}
+
+.navbar ul li a:hover {
+    border-bottom: 2px solid black;
+
+}
+
+.hero-text {
+    color: white;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+
+/*hero-text::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1;
+    top: 0;
+    opacity: 0.2;
+}*/
+
+.hero-text a {
+    color: white;
+
+    background-color: green;
+    font-weight: 900;
+    border-radius: 5rem;
+    font-size: 2rem;
+    padding: 0.8rem 1rem;
+    margin: 0.8rem auto;
+    display: block;
+    text-decoration: none;
+    transition: opacity 250ms linear;
+}
+
+.hero-text a:hover {
+    opacity: 0.5;
+}
+
+.hero-text h2 {
+    font-size: 9.8rem;
+    font-family: 'FS Kim', Georgia, serif;
+    color: black;
+}
+
+.hero-text p {
+    font-size: 3rem;
+    color: black;
+}
+
+section1 {
+    padding-bottom: 4.5rem;
+    padding-top: 8rem;
+    display: block;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: block;
+
+}
+
+#box1 {
+    padding-left: 10rem;
+    padding-right: 9rem;
+    height: 50vh;
+    display: flex;
+}
+
+.image1 {
+    height: 25rem;
+    margin-left: 8rem;
+    margin-right: -5rem;
+}
+
+#box1_div {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-left: 3rem;
+    margin-right: 4rem;
+}
+
+#box1_div_p {
+    height: 30vh;
+    padding-left: 14rem;
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+    padding-right: 12rem;
+    margin-left: 0rem;
+    margin-right: -13rem;
+}
+
+#box1_div_p>h2 {
+    font-size: 3rem;
+}
+
+#box1_div_p>p {
+    font-size: 1rem;
+}
+
+.richtext-custom_linked-images-wrapper {
+    display: flex;
+    ;
+}
+
+#box1_div_p>ul>a {
+    margin: 1rem;
+    color: green;
+    font-size: larger;
+
+}
+
+#box1_div_p>a {
+    margin-top: 1rem;
+    color: white;
+    margin-right: 13rem;
+    background-color: green;
+    font-weight: 900;
+    border-radius: 5rem;
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    transition: opacity 250ms linear;
+}
+
+.container {
+    display: flex;
+}
+
+.features-row {
+    display: flex;
+}
+
+.section2 {
+    justify-content: center;
+    margin: 3rem;
+    text-align: center;
+}
+
+.three-col-features-footer {
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.subcontent-text_txt-center>p>a {
+    color: green;
+}
+
+last>p {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: green;
+    text-decoration: underline;
+}
